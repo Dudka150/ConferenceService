@@ -36,7 +36,7 @@
                                     <span class="status status-pending">В ожидании</span>
                                 @endif
                             </li>
-                        @elseif
+                        @else
                                 <li>
                                     <span>{{ $applicant->name }} - {{ $applicant->work_name }}</span>
                                 </li>
