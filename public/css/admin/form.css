@@ -1,0 +1,107 @@
+/* public/css/admin/form.css */
+
+.form-container {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h2 {
+    color: #333333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.conference-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin: 0 40px;
+    margin-bottom: 15px;
+}
+
+label {
+    color: #333333;
+    margin-bottom: 5px;
+}
+
+input,
+textarea, 
+select {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+textarea {
+    height: 150px;
+}
+
+.button {
+    margin: 0;
+    width: 40%;
+    background-color: #fff;
+    color: #000;
+    padding: 10px 20px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #ebebeb;
+}
+
+.columns {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+.left__column {
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.right__column {
+    width: 25%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.cancel-button {
+    background-color: #ff4d4d;
+    color: white;
+    border: 1px solid #ff0000;
+}
+
+.cancel-button:hover {
+    background-color: #cc0000;
+}
+
+
+
+
+
+

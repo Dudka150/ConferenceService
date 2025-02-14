@@ -1,0 +1,210 @@
+.actions {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+a.link {
+    text-decoration: none;
+    color: #000;
+}
+
+button.link {
+    border: none;
+    background-color: #fff;
+}
+
+a.link, button.link {
+    padding: 8px 14px;
+    font-size: 18px;
+
+    cursor: pointer;
+
+    border: 1px solid black;
+    border-radius: 6px;
+
+    transition: background-color 0.3s ease;
+}
+
+a.link:hover, button.link:hover {
+    background-color: #ddd;
+}
+
+.sections {
+    margin-bottom: 15px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+.section {
+    padding: 15px;
+
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    border: 1px solid #ddd;
+    border-radius: 16px;
+}
+
+.textBlock {
+    position: absolute;
+    margin-left: 35%;
+}
+
+.users {
+    position: absolute;
+}
+
+textarea {
+    width: 650px;
+    height: 500px;
+    resize: none;
+    position: absolute;
+  }
+
+  #goBtn {
+     position: absolute;
+     margin-top: 200%;
+  }
+
+#saveBtn {
+    position: absolute;
+    margin-top: 200%;
+}
+
+#emailType {
+    position: fixed;
+    z-index: 100;
+    margin-left: 280px;
+    margin-top: -44px;
+}
+
+#filesBtn {
+    position: absolute;
+    margin-top: 200%;
+    margin-left: 55%;
+    white-space: nowrap;
+}
+
+.section__actions {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+a.section__link {
+    text-decoration: none;
+    color: #000;
+}
+
+.create__conf {
+    margin-top: 5px;
+    text-decoration: none;
+    align-items: center;
+    color: #000;
+}
+
+button.section__link {
+    border: none;
+    background-color: #fff;
+}
+
+a.section__link, button.section__link {
+    padding: 4px 8px;
+    font-size: 14px;
+
+    cursor: pointer;
+
+    border: 1px solid black;
+    border-radius: 6px;
+
+    transition: background-color 0.3s ease;
+}
+
+a.section__link:hover, button.section__link:hover {
+    background-color: #ddd;
+}
+
+.simple__info {
+    font-size: 14px;
+    color: #555;
+}
+
+.simple__info p {
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.approve-button, .reject-button {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.approve-button {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.reject-button {
+    background-color: #f44336;
+    color: white;
+}
+
+.status {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.status-approved {
+    color: #4CAF50;
+}
+
+.status-rejected {
+    color: #f44336;
+}
+
+.status-pending {
+    color: #FFC107;
+}
+
+
+
+.conferences {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Выравнивание по центру */
+    gap: 20px; /* Расстояние между блоками */
+}
+
+.conference {
+    width: 100%;
+    max-width: 1155px; /* Максимальная ширина, чтобы соответствовать header */
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .conferences {
+        display: flex;
+        flex-direction: column; /* Все элементы по одному в столбик */
+    }
+}
+
+
+
+

@@ -1,0 +1,229 @@
+body {
+  box-sizing: border-box;
+
+  font-family: 'Mulish', sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+    background: linear-gradient(to right, #c1d5f3, #f2e0e0);
+    height: 100vh;
+}
+
+.content {
+  width: 50%;
+  height: 80vh;
+
+  padding: 10px 30px;
+  margin-bottom: 20px;
+
+  overflow-y: auto;
+
+
+  border-radius: 16px;
+}
+
+header {
+  margin: 15px 0;
+  padding: 10px 30px;
+
+  width: 100%; /* На экранах средней и большой ширины панель будет растягиваться на всю доступную ширину */
+  max-width: 1200px; /* Максимальная ширина панели для больших экранов */
+  box-sizing: border-box; /* Чтобы padding не увеличивал ширину панели */
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  border-radius: 16px;
+  background-color: #ffffff;
+}
+
+/* Медиазапрос для экранов меньше 1200px */
+@media (max-width: 1200px) {
+  header {
+    padding: 10px 20px; /* Меньше отступов */
+  }
+}
+
+/* Медиазапрос для экранов меньше 768px (например, планшеты и мобильные устройства) */
+@media (max-width: 768px) {
+  header {
+    padding: 10px 15px; /* Еще меньше отступов на мобильных устройствах */
+    flex-direction: column; /* Стилизуем элементы в колонку для мобильных устройств */
+    align-items: flex-start; /* Выравнивание элементов по левому краю */
+  }
+
+  .controls {
+    flex-direction: column; /* Становится вертикальным списком */
+    gap: 10px; /* Увеличим промежутки между ссылками */
+    margin-top: 10px; /* Добавим верхний отступ для отделения */
+  }
+}
+
+
+
+
+header img {
+  width: 100px;
+}
+
+
+.controls {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.controls a {
+  text-decoration: none;
+  color: #000;
+}
+
+.control i, .controls__button i {
+  transition: all 0.3s ease;
+}
+
+.controls a:hover i, .controls__button:hover i {
+  background-color: #ddd;
+  padding: 0 10px;
+  border-radius: 10px;
+}
+
+.controls__button {
+  padding: 0;
+
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  transition: color 0.3s ease;
+}
+
+.controls__button:hover {
+  color: #555;
+}
+
+.control, .controls__button {
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.control p {
+  margin: 0;
+}
+
+.control {
+  width: 90px;
+}
+
+.material-icons {
+  font-size: 24px;
+  color: #555;
+}
+
+.active_icon {
+  background-color: #c2e7ff;
+  padding: 0 10px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+  height: 80%;
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #9ad6fd;
+  border: none;
+  border-radius: 12px;
+  padding: 5px;
+}
+
+::-webkit-scrollbar-corner {
+  padding: 5px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-track {
+  margin: 11px 0;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal__container {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}
+
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button {
+    margin: 20px auto;
+    width: 40%;
+    background-color: #fff;
+    color: #000;
+    padding: 10px 20px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #ebebeb;
+}
+
+
+
+
+
